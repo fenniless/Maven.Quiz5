@@ -19,14 +19,12 @@ public class PalindromeEvaluator {
         String[] all = new String[allPalindroes.size()];
         return allPalindroes.toArray(all);
     }
-
     public static Boolean isPalindrome(String string) {
         if(string.equals(reverseString(string))){
             return true;
         }
         return false;
     }
-
     public static String reverseString(String string) {
         StringBuilder sb = new StringBuilder(string);
         String s = sb.reverse().toString();
